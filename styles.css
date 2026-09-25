@@ -1,0 +1,719 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e6e5e4;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #111;
+}
+
+
+/* =========================================
+   MAIN CONTAINER
+========================================= */
+
+.container {
+    width: 900px;
+    max-width: 95%;
+    margin: 42px auto;
+}
+
+
+/* =========================================
+   GRID
+========================================= */
+
+.grid {
+    display: grid;
+
+    grid-template-columns:
+        150px
+        1fr
+        150px;
+
+    grid-template-rows:
+        191px
+        146px
+        146px;
+
+    gap: 18px;
+}
+
+
+/* =========================================
+   COMMON CARD
+========================================= */
+
+.card {
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+/* =========================================
+   TOP LEFT
+========================================= */
+
+.create-card {
+    background: #e5d8ce;
+    padding: 46px 18px 15px;
+}
+
+.create-card h2 {
+    font-size: 20px;
+    line-height: .97;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+.create-card h2 span {
+    color: #6547c5;
+    font-style: italic;
+}
+
+.button {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 10px 14px;
+
+    background: #efbd61;
+    color: #6547c5;
+
+    border-radius: 20px;
+
+    text-decoration: none;
+
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.dumbbell {
+    position: absolute;
+
+    right: 20px;
+    bottom: 18px;
+
+    font-size: 22px;
+
+    transform: rotate(-15deg);
+}
+
+
+/* =========================================
+   HERO CARD
+========================================= */
+
+.hero-card {
+    background: #6547c5;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.hero-card h1 {
+    font-size: 34px;
+    line-height: .95;
+
+    font-weight: 500;
+
+    letter-spacing: -1.5px;
+}
+
+.hero-card h1 span {
+    color: #f4c456;
+}
+
+.hero-card h1 i {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.stars {
+    color: #f5c457;
+
+    font-size: 18px;
+
+    letter-spacing: 2px;
+
+    margin-top: 14px;
+}
+
+.hero-card p {
+    font-size: 9px;
+
+    color: #eee;
+
+    margin-top: 3px;
+}
+
+
+/* =========================================
+   TOP RIGHT - SCHEDULE
+========================================= */
+
+.schedule-card {
+    background: #c7b9e4;
+
+    padding: 29px 18px;
+}
+
+.schedule-card h2 {
+    font-size: 17px;
+    line-height: .95;
+
+    font-weight: 500;
+}
+
+
+/* Schedule white box */
+
+.schedule-box {
+    background: #eeeaf2;
+
+    border-radius: 12px;
+
+    height: 96px;
+
+    margin-top: 14px;
+
+    padding: 10px;
+
+    position: relative;
+}
+
+.schedule-box h4 {
+    font-size: 8px;
+
+    font-weight: 500;
+}
+
+
+/* DAYS */
+
+.days {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 8px;
+
+    font-size: 6px;
+
+    color: #777;
+}
+
+.days .active {
+    background: #f1c4cc;
+
+    color: #c85c73;
+
+    padding: 3px 5px;
+
+    border-radius: 8px;
+}
+
+
+/* ACTIVE LABEL */
+
+.active-label {
+    position: absolute;
+
+    top: 38px;
+    left: 38px;
+
+    background: #8bd6b5;
+
+    color: #176b4b;
+
+    padding: 4px 7px;
+
+    border-radius: 8px;
+
+    font-size: 6px;
+
+    font-weight: bold;
+}
+
+
+/* BAR CHART */
+
+.chart {
+    height: 39px;
+
+    display: flex;
+
+    align-items: end;
+
+    justify-content: space-around;
+
+    margin-top: 4px;
+}
+
+.bar {
+    width: 8px;
+
+    background: #6547c5;
+
+    border-radius: 6px 6px 2px 2px;
+}
+
+.bar1 {
+    height: 17px;
+}
+
+.bar2 {
+    height: 25px;
+}
+
+.bar3 {
+    height: 37px;
+}
+
+.bar4 {
+    height: 29px;
+}
+
+.bar5 {
+    height: 22px;
+}
+
+
+/* TIMES */
+
+.time {
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 5px;
+
+    color: #888;
+
+    margin-top: 3px;
+}
+
+.schedule-card > p {
+    font-size: 8px;
+
+    line-height: 1.25;
+
+    margin-top: 12px;
+}
+
+
+/* =========================================
+   AI WORKOUT CARD
+========================================= */
+
+.workout-card {
+    background: #efbd61;
+
+    padding: 15px;
+}
+
+.workout-card h2 {
+    font-size: 20px;
+
+    line-height: .93;
+
+    font-weight: 500;
+
+    letter-spacing: -1px;
+}
+
+.workout-card h2 span {
+    color: #6547c5;
+
+    font-style: italic;
+}
+
+
+/* PHONE / CHAT */
+
+.phone {
+    position: absolute;
+
+    left: 14px;
+    right: 14px;
+    bottom: 12px;
+
+    height: 78px;
+
+    background: #eee7e0;
+
+    border-radius: 12px;
+
+    padding: 10px;
+}
+
+.question {
+    width: 85%;
+
+    background: white;
+
+    border-radius: 7px;
+
+    padding: 7px;
+
+    font-size: 6px;
+
+    color: #555;
+}
+
+.arrow {
+    position: absolute;
+
+    right: -8px;
+    top: 27px;
+
+    width: 38px;
+    height: 38px;
+
+    border-radius: 50%;
+
+    background: #efbd61;
+
+    border: 5px solid #e5d8ce;
+
+    color: #6547c5;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 22px;
+}
+
+.answer {
+    margin-top: 5px;
+
+    background: #ddd5e9;
+
+    border-radius: 7px;
+
+    padding: 6px;
+
+    font-size: 6px;
+
+    width: 90%;
+}
+
+.answer b {
+    color: #6547c5;
+}
+
+
+/* =========================================
+   ACCOUNTS CARD
+========================================= */
+
+.accounts-card {
+    background: #f0efed;
+
+    padding: 16px;
+}
+
+.profile-icons {
+    display: flex;
+
+    gap: 7px;
+
+    margin-bottom: 10px;
+}
+
+.profile-icons div {
+    width: 27px;
+    height: 27px;
+
+    border-radius: 50%;
+
+    background: #eee;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 15px;
+}
+
+.accounts-card h2 {
+    font-size: 18px;
+
+    line-height: .95;
+
+    font-weight: 500;
+
+    letter-spacing: -1px;
+}
+
+
+/* =========================================
+   CONSISTENCY CARD
+========================================= */
+
+.consistency-card {
+    background: #efbd61;
+
+    padding: 15px;
+}
+
+.consistency-card h2 {
+    font-size: 19px;
+
+    line-height: .92;
+
+    font-weight: 500;
+
+    letter-spacing: -1px;
+}
+
+.month {
+    position: absolute;
+
+    bottom: 12px;
+    left: 15px;
+    right: 15px;
+
+    background: #6547c5;
+
+    color: white;
+
+    border-radius: 7px;
+
+    height: 43px;
+
+    padding: 7px 9px;
+}
+
+.month > div:first-child {
+    display: flex;
+
+    justify-content: space-between;
+
+    font-size: 7px;
+}
+
+.check-row {
+    display: flex;
+
+    justify-content: space-between;
+
+    margin-top: 7px;
+}
+
+.check-row b {
+    width: 11px;
+    height: 11px;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: #6547c5;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 7px;
+}
+
+
+/* =========================================
+   PROGRESS CARD
+========================================= */
+
+.progress-card {
+    background: #f0efed;
+
+    padding: 15px;
+}
+
+.percentage {
+    font-size: 30px;
+
+    font-weight: 500;
+
+    letter-spacing: -2px;
+}
+
+.progress-card p {
+    font-size: 9px;
+
+    margin-top: 2px;
+}
+
+.people {
+    position: absolute;
+
+    bottom: 13px;
+    left: 14px;
+
+    font-size: 20px;
+
+    letter-spacing: -5px;
+}
+
+
+/* =========================================
+   GROWTH CARD
+========================================= */
+
+.growth-card {
+    background: #6547c5;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    padding: 14px 15px;
+}
+
+.growth-chart {
+    width: 130px;
+    height: 118px;
+
+    background: #f0efed;
+
+    color: #555;
+
+    border-radius: 10px;
+
+    padding: 14px;
+
+    flex-shrink: 0;
+}
+
+.growth-chart small {
+    font-size: 6px;
+}
+
+.growth-chart strong {
+    display: block;
+
+    color: #555;
+
+    font-size: 17px;
+
+    margin-top: 4px;
+}
+
+.mini-bars {
+    height: 45px;
+
+    display: flex;
+
+    align-items: end;
+
+    gap: 6px;
+
+    margin-top: 3px;
+}
+
+.mini-bars span {
+    width: 9px;
+
+    background: #6547c5;
+
+    border-radius: 5px 5px 2px 2px;
+}
+
+.mini-bars span:nth-child(1) {
+    height: 15px;
+}
+
+.mini-bars span:nth-child(2) {
+    height: 22px;
+}
+
+.mini-bars span:nth-child(3) {
+    height: 28px;
+}
+
+.mini-bars span:nth-child(4) {
+    height: 36px;
+}
+
+.mini-bars span:nth-child(5) {
+    height: 42px;
+}
+
+.mini-bars span:nth-child(6) {
+    height: 47px;
+}
+
+.growth-card h2 {
+    margin-left: 25px;
+
+    font-size: 24px;
+
+    line-height: .95;
+
+    font-weight: 500;
+
+    letter-spacing: -1px;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 700px) {
+
+    .container {
+        margin: 20px auto;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+
+    .hero-card {
+        grid-column: span 2;
+        min-height: 190px;
+    }
+
+    .growth-card {
+        grid-column: span 2;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .grid {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card {
+        min-height: 180px;
+    }
+
+    .hero-card {
+        min-height: 210px;
+    }
+
+    .growth-card {
+        min-height: 190px;
+    }
+}
